@@ -212,7 +212,7 @@ public class Dependencies {
     }
 
     private static void reportMissingPlatformSupport(String osname, String architecture) {
-        String url = "https://api.wakatime.com/api/v1/cli-missing?osname=" + osname + "&architecture=" + architecture + "&plugin=" + WakaTime.IDE_NAME;
+        String url = "https://plugin-staging.zeedas.com/api/v1/cli-missing?osname=" + osname + "&architecture=" + architecture + "&plugin=" + WakaTime.IDE_NAME;
         try {
             getUrlAsString(url, null, false);
         } catch (Exception e) {
