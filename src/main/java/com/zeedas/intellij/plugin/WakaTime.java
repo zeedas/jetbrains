@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        WakaTime.java
 Description: Automatic time tracking for JetBrains IDEs.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.AppTopics;
 import com.intellij.ide.BrowserUtil;
@@ -74,15 +73,20 @@ public class WakaTime implements ApplicationComponent {
     }
 
     public void initComponent() {
+        ConfigFile.set("settings", "api_url", false, "https://plugin-staging.zeedas.com/api/v1");
         try {
+            // test
+
+            // another
+            //
             // support older IDE versions with deprecated PluginManager
-            VERSION = PluginManager.getPlugin(PluginId.getId("com.wakatime.intellij.plugin")).getVersion();
+            VERSION = PluginManager.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
         } catch (Exception e) {
             // use PluginManagerCore if PluginManager deprecated
-            VERSION = PluginManagerCore.getPlugin(PluginId.getId("com.wakatime.intellij.plugin")).getVersion();
+            VERSION = PluginManagerCore.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
         }
-        log.info("Initializing WakaTime plugin v" + VERSION + " (https://wakatime.com/)");
-        //System.out.println("Initializing WakaTime plugin v" + VERSION + " (https://wakatime.com/)");
+        log.info("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
+        //System.out.println("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
 
         // Set runtime constants
         IDE_NAME = PlatformUtils.getPlatformPrefix();
@@ -625,7 +629,7 @@ public class WakaTime implements ApplicationComponent {
     }
 
     public static void openDashboardWebsite() {
-        BrowserUtil.browse("https://wakatime.com/dashboard");
+        BrowserUtil.browse("https://zeedas.com");
     }
 
     private static String todayText = "initialized";

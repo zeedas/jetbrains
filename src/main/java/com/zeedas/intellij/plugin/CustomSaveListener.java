@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        CustomSaveListener.java
 Description: Sends a heartbeat when a file is saved.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;

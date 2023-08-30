@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        CustomDocumentListener.java
 Description: Logs time from document change events.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.event.BulkAwareDocumentListener;

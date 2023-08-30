@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        ApiKey.java
 Description: Prompts user for api key if it does not exist.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
@@ -22,7 +21,7 @@ public class ApiKey extends DialogWrapper {
 
     public ApiKey(@Nullable Project project) {
         super(project, true);
-        setTitle("WakaTime API Key");
+        setTitle("Zeedas API Key");
         setOKButtonText("Save");
         panel = new JPanel();
         input = new JTextField(36);

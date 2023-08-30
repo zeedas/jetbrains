@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        ConfigFile.java
 Description: Read and write settings from the INI config file.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import java.io.*;
 

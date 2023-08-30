@@ -1,4 +1,4 @@
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.CertificateException;

@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        CustomStatusBar.java
 Description: Shows today's total code time in the status bar.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.popup.ListPopup;
@@ -35,7 +34,7 @@ public class CustomStatusBar implements StatusBarWidgetFactory {
     @NotNull
     @Override
     public String getDisplayName() {
-        return "WakaTime";
+        return "Zeedas";
     }
 
     @Override

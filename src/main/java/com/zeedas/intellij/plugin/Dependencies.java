@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        Dependencies.java
 Description: Manages plugin dependencies.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import org.jetbrains.annotations.Nullable;
 

@@ -1,12 +1,11 @@
 /* ==========================================================
 File:        Settings.java
 Description: Prompts user for api key if it does not exist.
-Maintainer:  WakaTime <support@wakatime.com>
 License:     BSD, see LICENSE for more details.
-Website:     https://wakatime.com/
+Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.wakatime.intellij.plugin;
+package com.zeedas.intellij.plugin;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.DialogWrapper;
@@ -30,7 +29,7 @@ public class Settings extends DialogWrapper {
 
     public Settings(@Nullable Project project) {
         super(project, true);
-        setTitle("WakaTime Settings");
+        setTitle("Zeedas Settings");
         setOKButtonText("Save");
         panel = new JPanel();
         panel.setLayout(new GridLayout(0,2));
@@ -49,7 +48,7 @@ public class Settings extends DialogWrapper {
         proxy.setText(p);
         panel.add(proxy);
 
-        statusBarLabel = new JLabel("Show WakaTime in status bar:", JLabel.CENTER);
+        statusBarLabel = new JLabel("Show Zeedas in status bar:", JLabel.CENTER);
         panel.add(statusBarLabel);
         String statusBarValue = ConfigFile.get("settings", "status_bar_enabled", false);
         statusBar = new JCheckBox();
