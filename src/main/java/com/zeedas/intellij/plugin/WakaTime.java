@@ -73,7 +73,7 @@ public class WakaTime implements ApplicationComponent {
     }
 
     public void initComponent() {
-        ConfigFile.set("settings", "api_url", false, "https://plugin-staging.zeedas.com/api/v1");
+        ConfigFile.set("settings", "api_url", false, "https://plugin.zeedas.com/api/v1");
         try {
             // test
 
@@ -485,7 +485,7 @@ public class WakaTime implements ApplicationComponent {
     private static String getBuiltinProxy() {
         HttpConfigurable config = HttpConfigurable.getInstance();
 
-        if (!config.isHttpProxyEnabledForUrl("https://plugin-staging.zeedas.com")) return null;
+        if (!config.isHttpProxyEnabledForUrl("https://plugin.zeedas.com")) return null;
 
         String host = config.PROXY_HOST;
         if (host != null) {
