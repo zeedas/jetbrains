@@ -1,8 +1,8 @@
 <idea-plugin version="2" url="https://zeedas.com" require-restart="true">
     <id>com.zeedas.intellij.plugin</id>
-    <name>Zeedas</name>
+    <name>ZeedasBeta</name>
     <version>0.0.1</version>
-    <vendor email="info@zeedas.com" url="https://zeedas.com">Zeedas</vendor>
+    <vendor email="info@zeedas.com" url="https://zeedas.com">ZeedasBeta</vendor>
 
     <description><![CDATA[
       Data Insight for Engineering Excellence.<br />
@@ -50,7 +50,7 @@
     </application-components>
 
     <actions>
-        <action id="pluginMenu" class="com.zeedas.intellij.plugin.PluginMenu" text="Zeedas">
+        <action id="pluginMenu" class="com.zeedas.intellij.plugin.PluginMenu" text="ZeedasBeta">
             <add-to-group group-id="ToolsMenu" anchor="first" />
         </action>
     </actions>

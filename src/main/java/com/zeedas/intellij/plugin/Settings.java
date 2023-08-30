@@ -29,7 +29,7 @@ public class Settings extends DialogWrapper {
 
     public Settings(@Nullable Project project) {
         super(project, true);
-        setTitle("Zeedas Settings");
+        setTitle("ZeedasBeta Settings");
         setOKButtonText("Save");
         panel = new JPanel();
         panel.setLayout(new GridLayout(0,2));
@@ -48,7 +48,7 @@ public class Settings extends DialogWrapper {
         proxy.setText(p);
         panel.add(proxy);
 
-        statusBarLabel = new JLabel("Show Zeedas in status bar:", JLabel.CENTER);
+        statusBarLabel = new JLabel("Show ZeedasBeta in status bar:", JLabel.CENTER);
         panel.add(statusBarLabel);
         String statusBarValue = ConfigFile.get("settings", "status_bar_enabled", false);
         statusBar = new JCheckBox();

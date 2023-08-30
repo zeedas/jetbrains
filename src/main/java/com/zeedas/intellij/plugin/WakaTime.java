@@ -85,8 +85,8 @@ public class WakaTime implements ApplicationComponent {
             // use PluginManagerCore if PluginManager deprecated
             VERSION = PluginManagerCore.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
         }
-        log.info("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
-        //System.out.println("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
+        log.info("Initializing ZeedasBeta plugin v" + VERSION + " (https://zeedas.com/)");
+        //System.out.println("Initializing ZeedasBeta plugin v" + VERSION + " (https://zeedas.com/)");
 
         // Set runtime constants
         IDE_NAME = PlatformUtils.getPlatformPrefix();

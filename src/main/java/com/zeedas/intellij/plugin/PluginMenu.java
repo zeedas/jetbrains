@@ -1,6 +1,6 @@
 /* ==========================================================
 File:        PluginMenu.java
-Description: Adds a Zeedas item to the File menu.
+Description: Adds a ZeedasBeta item to the File menu.
 License:     BSD, see LICENSE for more details.
 Website:     https://zeedas.com/
 ===========================================================*/
@@ -13,7 +13,7 @@ import com.intellij.openapi.project.Project;
 
 public class PluginMenu extends AnAction {
     public PluginMenu() {
-        super("Zeedas Settings");
+        super("ZeedasBeta Settings");
         // super("WakaTime Settings", "", IconLoader.getIcon("/Mypackage/icon.png"));
     }
     public void actionPerformed(AnActionEvent e) {

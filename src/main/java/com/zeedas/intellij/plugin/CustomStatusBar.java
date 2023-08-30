@@ -34,7 +34,7 @@ public class CustomStatusBar implements StatusBarWidgetFactory {
     @NotNull
     @Override
     public String getDisplayName() {
-        return "Zeedas";
+        return "ZeedasBeta";
     }
 
     @Override

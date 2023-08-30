@@ -1,6 +1,6 @@
-# jetbrains-zeedas
+# jetbrains-zeedasbeta
 
-[Zeedas][zeedas] - Data Insight for Engineering Excellence.
+[Zeedas Beta][zeedas] - Data Insight for Engineering Excellence.
 
 Supports Jetbrains IDES: Android Studio, AppCode, CLion, DataGrip, GoLand, IntelliJ IDEA, PhpStorm, PyCharm, Rider, RubyMine, WebStorm.
 
