@@ -1,11 +1,11 @@
-<idea-plugin version="2" url="https://zeedas.com" require-restart="true">
+<idea-plugin url="https://zeedas.com" require-restart="true">
     <id>com.zeedas.intellij.plugin</id>
     <name>Zeedas</name>
-    <version>0.0.1</version>
+    <version>0.0.3</version>
     <vendor email="info@zeedas.com" url="https://zeedas.com">Zeedas</vendor>
 
     <description><![CDATA[
-      Data Insight for Engineering Excellence.<br />
+      Zeedas provides engineers with the data insight’s they need to expose inefficiencies and make better decisions to improve output by tracking coding activities.<br />
       <br />
       <b>Installation</b><br />
       <br />
@@ -31,7 +31,7 @@
         <br />
     ]]></change-notes>
 
-<!--    <idea-version since-build="123"/>-->
+    <idea-version since-build="123"/>
 
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>

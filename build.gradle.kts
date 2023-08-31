@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.zeedas.intellij"
-version = "0.0.1"
+version = "0.0.3"
 
 repositories {
     mavenCentral()
