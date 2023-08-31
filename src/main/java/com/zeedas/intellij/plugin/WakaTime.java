@@ -75,10 +75,6 @@ public class WakaTime implements ApplicationComponent {
     public void initComponent() {
         ConfigFile.set("settings", "api_url", false, "https://plugin.zeedas.com/api/v1");
         try {
-            // test
-
-            // another
-            //
             // support older IDE versions with deprecated PluginManager
             VERSION = PluginManager.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
         } catch (Exception e) {
@@ -89,7 +85,7 @@ public class WakaTime implements ApplicationComponent {
         //System.out.println("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
 
         // Set runtime constants
-        IDE_NAME = PlatformUtils.getPlatformPrefix();
+        IDE_NAME = ApplicationInfo.getInstance().getFullApplicationName();
         IDE_VERSION = ApplicationInfo.getInstance().getFullVersion();
 
         setupDebugging();

@@ -31,7 +31,7 @@
         <br />
     ]]></change-notes>
 
-    <idea-version since-build="123"/>
+<!--    <idea-version since-build="123"/>-->
 
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.platform</depends>
