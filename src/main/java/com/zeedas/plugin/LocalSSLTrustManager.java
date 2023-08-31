@@ -1,4 +1,4 @@
-package com.zeedas.intellij.plugin;
+package com.zeedas.plugin;
 
 import javax.net.ssl.X509TrustManager;
 import java.security.cert.CertificateException;

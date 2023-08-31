@@ -5,7 +5,7 @@ License:     BSD, see LICENSE for more details.
 Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.zeedas.intellij.plugin;
+package com.zeedas.plugin;
 
 import com.intellij.AppTopics;
 import com.intellij.ide.BrowserUtil;
@@ -76,10 +76,10 @@ public class WakaTime implements ApplicationComponent {
         ConfigFile.set("settings", "api_url", false, "https://plugin.zeedas.com/api/v1");
         try {
             // support older IDE versions with deprecated PluginManager
-            VERSION = PluginManager.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
+            VERSION = PluginManager.getPlugin(PluginId.getId("com.zeedas.plugin")).getVersion();
         } catch (Exception e) {
             // use PluginManagerCore if PluginManager deprecated
-            VERSION = PluginManagerCore.getPlugin(PluginId.getId("com.zeedas.intellij.plugin")).getVersion();
+            VERSION = PluginManagerCore.getPlugin(PluginId.getId("com.zeedas.plugin")).getVersion();
         }
         log.info("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");
         //System.out.println("Initializing Zeedas plugin v" + VERSION + " (https://zeedas.com/)");

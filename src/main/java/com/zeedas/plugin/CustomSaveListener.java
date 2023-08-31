@@ -5,7 +5,7 @@ License:     BSD, see LICENSE for more details.
 Website:     https://zeedas.com/
 ===========================================================*/
 
-package com.zeedas.intellij.plugin;
+package com.zeedas.plugin;
 
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;

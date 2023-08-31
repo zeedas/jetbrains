@@ -1,7 +1,7 @@
 <idea-plugin url="https://zeedas.com" require-restart="true">
-    <id>com.zeedas.intellij.plugin</id>
+    <id>com.zeedas.plugin</id>
     <name>Zeedas</name>
-    <version>0.0.3</version>
+    <version>0.0.1</version>
     <vendor email="info@zeedas.com" url="https://zeedas.com">Zeedas</vendor>
 
     <description><![CDATA[
@@ -37,20 +37,20 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <statusBarWidgetFactory implementation="com.zeedas.intellij.plugin.CustomStatusBar"
-                                id="com.zeedas.intellij.plugin.CustomStatusBar"
+        <statusBarWidgetFactory implementation="com.zeedas.plugin.CustomStatusBar"
+                                id="com.zeedas.plugin.CustomStatusBar"
                                 order="first" />
-        <postStartupActivity implementation="com.zeedas.intellij.plugin.WakaTimeStartupActivity" />
+        <postStartupActivity implementation="com.zeedas.plugin.WakaTimeStartupActivity" />
     </extensions>
 
     <application-components>
         <component>
-            <implementation-class>com.zeedas.intellij.plugin.WakaTime</implementation-class>
+            <implementation-class>com.zeedas.plugin.WakaTime</implementation-class>
         </component>
     </application-components>
 
     <actions>
-        <action id="pluginMenu" class="com.zeedas.intellij.plugin.PluginMenu" text="Zeedas">
+        <action id="pluginMenu" class="com.zeedas.plugin.PluginMenu" text="Zeedas">
             <add-to-group group-id="ToolsMenu" anchor="first" />
         </action>
     </actions>

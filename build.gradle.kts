@@ -4,8 +4,8 @@ plugins {
     id("org.jetbrains.intellij") version "1.14.1"
 }
 
-group = "com.zeedas.intellij"
-version = "0.0.3"
+group = "com.zeedas.plugin"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
