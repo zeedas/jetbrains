@@ -1,7 +1,7 @@
 <idea-plugin url="https://zeedas.com" require-restart="true">
     <id>com.zeedas.plugin</id>
     <name>Zeedas</name>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <vendor email="info@zeedas.com" url="https://zeedas.com">Zeedas</vendor>
 
     <description><![CDATA[
@@ -23,6 +23,11 @@
     ]]></description>
 
     <change-notes><![CDATA[
+        0.0.2 (2023-10-01)<br />
+        ++++++++++++++++++<br />
+        <br />
+        - Improved Compatibility.<br />
+        <br />
         0.0.1 (2023-09-01)<br />
         ++++++++++++++++++<br />
         <br />
