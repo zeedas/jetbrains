@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.zeedas.intellij"
-version = "0.0.1"
+version = "0.0.2"
 
 repositories {
     mavenCentral()
@@ -31,8 +31,8 @@ tasks {
     }
 
     patchPluginXml {
-        sinceBuild.set("222")
-        untilBuild.set("232.*")
+        sinceBuild.set("12.0")
+        untilBuild.set("999.999") // Set a high version for compatibility with all future versions
     }
 
     signPlugin {
