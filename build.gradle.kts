@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.zeedas.plugin"
-version = "0.0.2"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -23,15 +23,15 @@ intellij {
 tasks {
     // Set the JVM compatibility versions
     withType<JavaCompile> {
-        sourceCompatibility = "1.8"
-        targetCompatibility = "1.8"
+        sourceCompatibility = "11"
+        targetCompatibility = "11"
     }
     withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.jvmTarget = "1.8"
+        kotlinOptions.jvmTarget = "11"
     }
 
     patchPluginXml {
-        sinceBuild.set("12.0")
+        sinceBuild.set("201.0")
     }
 
     signPlugin {
